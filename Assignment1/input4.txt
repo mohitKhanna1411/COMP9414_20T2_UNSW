@@ -1,0 +1,22 @@
+# five tasks
+task, t1 2
+task, t2 3
+task, t3 1
+task, t4 2
+task, t5 6
+
+# four binary constraints
+constraint, t1 after t2
+constraint, t2 before t3
+constraint, t4 starts-at t3
+constraint, t4 before t5
+
+# three hard domain constraints
+domain, t1 wed
+domain, t5 tue
+domain, t3 12pm
+
+# three soft deadline constraints
+domain, t2 ends-by wed 3pm 10
+domain, t3 ends-by mon 12pm 20
+domain, t5 ends-by tue 10am 20

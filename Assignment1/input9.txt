@@ -1,0 +1,13 @@
+# two tasks
+
+task, t1 4
+task, t2 4
+
+# two binary constraints
+
+constraint, t1 before t2
+
+domain, t2 mon
+
+domain, t1 ends-by mon 3pm 10
+domain, t2 ends-by mon 3pm 10

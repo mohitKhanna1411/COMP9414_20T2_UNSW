@@ -1,0 +1,32 @@
+# eight tasks
+task, t1 3
+task, t2 1
+task, t3 3
+task, t4 2
+task, t5 1
+task, t6 4
+task, t7 3
+task, t8 4
+
+# seven binary constraints
+constraint, t1 before t2
+constraint, t2 same-day t3
+constraint, t3 starts-at t2
+constraint, t4 after t3
+constraint, t5 before t6
+constraint, t7 starts-at t6
+constraint, t8 after t7
+
+# seven hard domain constraints
+domain, t1 mon
+domain, t2 12pm
+domain, t7 starts-before wed 10am
+domain, t4 starts-in thu 9am-thu 12pm
+domain, t5 ends-after 4pm
+domain, t3 ends-in mon 12pm-mon 4pm
+domain, t8 starts-after fri 1pm
+
+# three soft deadline constraints
+domain, t2 ends-by wed 1pm 10
+domain, t3 ends-by wed 12pm 20
+domain, t4 ends-by thu 4pm 30
